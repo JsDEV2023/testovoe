@@ -1,0 +1,53 @@
+.dropdown__wrapper {
+    @apply relative;
+}
+
+.dropdown {
+    @apply cursor-pointer min-w-full flex justify-between py-2 px-3 border border-solid border-border-grey text-input-text rounded-md;
+}
+
+.dropdown.active {
+    @apply outline-none border-focus shadow-input rounded-b-none rounded-bl-none;
+}
+
+.dropdown__btn {
+    @apply w-4 h-4 relative transition-all;
+}
+
+.dropdown__btn:before,
+.dropdown__btn:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    top: 50%;
+    background-color: rgb(94, 94, 94);
+    position: absolute;
+}
+
+.dropdown__btn:before {
+    left: 45%;
+    transform: rotate(45deg);
+}
+
+.dropdown__btn:after {
+    left: 75%;
+    transform: rotate(-45deg);
+}
+
+.dropdown__btn.active {
+    transform: rotate(180deg);
+    transition: .2s linear;
+}
+
+.dropdown__content {
+    @apply hidden absolute bg-white top-full left-0 w-full border border-solid border-gray-700 border-t-0 z-10;
+}
+
+
+.dropdown__item {
+    @apply py-1 px-2 cursor-pointer hover:bg-cyan text-input-text hover:text-white;
+}
+
+.dropdown__content.active {
+    @apply block;
+}

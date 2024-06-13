@@ -1,0 +1,14 @@
+.button_blue,
+.button_grey {
+    @apply py-2 px-3 rounded-md transition-all;
+}
+
+.button_blue {
+    @apply text-white bg-cyan hover:bg-blue-700 hover:transition-all;
+}
+
+
+.button_grey {
+    @apply text-gray-400 border border-solid border-gray-400 hover:text-gray-700 hover:border-gray-700 hover:transition-all;
+}
+

@@ -1,0 +1,21 @@
+.input__body {
+    @apply w-full relative min-h-full;
+}
+
+.input__title {
+    @apply absolute left-0 -top-7;
+}
+
+.input {
+    @apply w-full py-2 px-3 h-full border border-solid border-border-grey text-input-text rounded-md focus:outline-none focus:border-focus focus:shadow-input text-xs;
+
+}
+
+
+.input.disabled {
+    @apply bg-gray-100;
+}
+
+.radio{
+    @apply w-5;
+}

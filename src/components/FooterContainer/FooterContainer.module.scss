@@ -1,0 +1,16 @@
+.footer__container {
+    @apply max-w-container p-4 m-auto grid grid-cols-3;
+}
+
+.footer__container_img {
+    @apply opacity-70 hover:opacity-100 h-11;
+}
+
+.footer__container_item {
+    @apply px-4 py-1;
+
+}
+
+.footer__container_link {
+    @apply text-cyan hover:underline text-xs ;
+}

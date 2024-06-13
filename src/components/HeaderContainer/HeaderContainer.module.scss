@@ -1,0 +1,27 @@
+.header__block_logo {
+    @apply border-b-1 bg-white;
+}
+
+.header__logo {
+    @apply flex py-8  max-w-container m-auto px-4;
+    & img {
+        @apply w-14 mr-2;
+    }
+}
+
+.header__title {
+    @apply w-56 flex items-center hover:text-logo;
+}
+
+.header__block_nav {
+    @apply border-b-2 bg-white;
+}
+
+.header__nav {
+    @apply flex flex-wrap m-auto max-w-container px-4; 
+
+    & a {
+        @apply p-3 hover:border-b-2 hover:border-b-yellow rounded-none;
+    }
+}
+

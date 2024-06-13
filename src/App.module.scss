@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* обнуляющие стили*/ 
+
+* {
+    @apply m-0 p-0 box-border;
+
+}
+
+html,
+body,
+#root {
+    @apply h-full ;
+}
+
+#root{ 
+    display: none;;
+}
+
+body {
+    @apply bg-body;
+}
+
+
+a {
+    @apply no-underline;
+}
+
+ul {
+    @apply list-none;
+}
+
+button {
+    @apply p-0 border-none text-inherit bg-transparent cursor-pointer;
+}
+
+.App {
+    @apply relative min-h-full flex flex-col text-base ; 
+}
+
+.App:before, .App:after {
+    content: "";
+    width: 25rem;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    z-index: -20;
+    opacity: .9;
+}
+
+.App:before {
+    left: -5rem;
+    background: #fffae5;
+}
+
+.App:after {
+    left: 20rem;
+    background: #fffef0;
+    box-shadow: 0 100vh 0 #fffef0;
+}
+
+/* стили для основных семантических блоков */
+
+
+
+.header {
+    @apply  bg-white;
+}
+
+.main {
+    @apply  flex-auto ;
+}

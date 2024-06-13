@@ -1,0 +1,56 @@
+
+.formStep3__card {
+    @apply border-b-1 mb-2 py-2;
+}
+
+.card__title {
+    @apply mb-5 uppercase text-custom-ldark font-medium;
+}
+
+.card__form > :not(:last-child) {
+    @apply mb-5;
+}
+
+.card__form_row {
+    @apply sssm:block md:flex min-w-full md:items-center;
+}
+
+.card__form_dropdown {
+    @apply w-full mr-8 ;
+}
+
+.card__form_title {
+    @apply w-72 flex items-center text-custom-ldark;
+}
+
+.required {
+    @apply text-red-600 ml-1
+}
+
+.card__form_download {
+    @apply flex items-center;
+}
+
+.formStep3__buttons {
+    @apply flex justify-between;
+}
+
+.addInput {
+    @apply text-xs text-custom-ldark cursor-pointer hover:underline;
+}
+
+.input__radio {
+    @apply flex mb-5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }

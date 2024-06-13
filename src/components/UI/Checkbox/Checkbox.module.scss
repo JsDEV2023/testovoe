@@ -1,0 +1,40 @@
+.checkbox {
+    @apply cursor-pointer flex items-center relative;
+}
+
+.checkbox__input {
+    @apply hidden;
+}
+
+.custom_checkbox {
+    @apply  rounded mr-1 p-2 bg-gray-200;
+}
+
+.custom_checkbox_active {
+    @apply  rounded mr-1 p-2 relative bg-cyan;
+}
+
+.custom_checkbox_active::before,
+.custom_checkbox_active::after {
+    content: '';
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+}
+
+.custom_checkbox_active::before {
+    width: 3px;
+    rotate: 50deg;
+    left: 25%;
+}
+
+.custom_checkbox_active::after {
+    width: 7px;
+    rotate: -50deg;
+    left: 30%;
+}
+
+.text {
+    @apply ml-2 text-custom-ldark;
+}

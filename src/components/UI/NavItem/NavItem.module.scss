@@ -1,0 +1,14 @@
+.nav__item {
+    padding: 14px;
+}
+
+.nav__item_link {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.nav__item_link:hover {
+    background-color: white;
+    transition: 0.1s linear;
+}
